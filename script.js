@@ -246,12 +246,17 @@ class SimpleNorwegianAssistant {
             return 'Функция поиска не загружена. Проверьте подключение database.js';
         }
 
-        // Поиск приветствия
+        // === ДИАЛОГОВЫЕ ОТВЕТЫ ===
+        // Все диалоговые проверки теперь в database.js через функцию searchInDatabase
+
+        // === СТАНДАРТНЫЕ КОМАНДЫ ===
+
+        // Приветствие
         if (lowerMessage.includes('привет') || lowerMessage.includes('здравств')) {
             return getConversationResponse('greetings') || 'Привет! Я помогаю изучать норвежский язык.';
         }
 
-        // Поиск помощи
+        // Помощь
         if (lowerMessage.includes('помощь') || lowerMessage.includes('помоги')) {
             return getConversationResponse('help') || 'Спросите меня любое слово для перевода или попросите случайное слово.';
         }
@@ -266,7 +271,12 @@ class SimpleNorwegianAssistant {
             return getRandomWord();
         }
 
-        // Основной поиск перевода
+        // Прощание
+        if (lowerMessage.includes('пока') || lowerMessage.includes('до свидания')) {
+            return getConversationResponse('farewell') || 'До свидания! Удачи в изучении норвежского!';
+        }
+
+        // === ПОИСК ПЕРЕВОДА ===
         const searchResult = searchInDatabase(lowerMessage);
         if (searchResult) {
             return searchResult;
@@ -275,6 +285,8 @@ class SimpleNorwegianAssistant {
         // Если ничего не найдено
         return getConversationResponse('unknown') || 'Извините, не нашел перевод этого слова. Попробуйте другое слово.';
     }
+
+
 
     /**
      * Добавление сообщения пользователя
