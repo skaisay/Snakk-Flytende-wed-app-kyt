@@ -1,0 +1,57 @@
+{
+    "translations": {
+        "как дела?": "hvordan har du det?",
+        "все хорошо": "alt er bra",
+        "что происходит?": "hva skjer?", 
+        "увидимся позже": "vi sees senere",
+        "хорошего дня": "ha en fin dag",
+        "спокойной ночи": "god natt",
+        "приятного аппетита": "bon appetitt",
+        "с днем рождения": "gratulerer med dagen",
+        "счастливого нового года": "godt nytt år",
+        "где ты живешь?": "hvor bor du?",
+        "сколько тебе лет?": "hvor gammel er du?",
+        "откуда ты?": "hvor kommer du fra?",
+        "я из России": "jeg kommer fra Russland",
+        "не понимаю": "jeg forstår ikke",
+        "можете повторить?": "kan du gjenta det?",
+        "говорите медленнее": "snakk saktere",
+        "как это сказать?": "hvordan sier man det?",
+        "что это значит?": "hva betyr det?",
+        "помогите мне": "hjelp meg",
+        "где касса?": "hvor er kassen?"
+    },
+    "vocabulary": {
+        "daily_phrases": {
+            "tusen takk": "большое спасибо",
+            "bare hyggelig": "пожалуйста/не за что",
+            "unnskyld meg": "извините меня",
+            "beklager": "извините (сожалею)",
+            "ikke noe problem": "не проблема",
+            "det går bra": "все в порядке",
+            "jeg vet ikke": "я не знаю",
+            "kanskje": "может быть",
+            "selvfølgelig": "конечно",
+            "absolutt": "абсолютно"
+        },
+        "questions": {
+            "hva": "что",
+            "hvor": "где/куда",
+            "når": "когда",
+            "hvem": "кто",
+            "hvorfor": "почему",
+            "hvordan": "как",
+            "hvilken": "какой",
+            "hvor mye": "сколько (цена)",
+            "hvor mange": "сколько (количество)",
+            "hvor lenge": "как долго"
+        }
+    },
+    "conversations": {
+        "phrases": [
+            "Фразы помогают быстрее заговорить на норвежском!",
+            "Изучение готовых фраз - отличный способ выучить язык.",
+            "Эти фразы пригодятся в повседневном общении."
+        ]
+    }
+}
